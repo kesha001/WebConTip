@@ -1,0 +1,42 @@
+@import "variables";
+body{
+  margin: 0;
+  background-color: $back_color;
+}
+ul.topnav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $background_nav;
+  li{
+    float: right;
+    a{
+      display: block;
+      color: $text_color;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      background-color: $buttons_back_color;
+    }
+    a:hover{
+      background-color: $buttons_hover_color;
+      color: black;
+    }
+  }
+  h1{
+    display: block;
+    color: $text_color;
+    float: left;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+  ul.topnav h1{
+    position: absolute;
+    top: 0px;
+    left: -5000px;
+  }
+}
