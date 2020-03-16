@@ -4,8 +4,8 @@
   left: 10%;
   right: 10%; }
 
-.description {
-  text-align: center;
-  right: 10%; }
+@media screen and (max-width: 800px) {
+  .main_image {
+    top: 50%; } }
 
 /*# sourceMappingURL=film_page_body.css.map */
