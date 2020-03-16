@@ -80,7 +80,7 @@ ul.topnav {
   width: 80%;
   margin: 5%; }
 
-image {
+.image {
   opacity: 1;
   display: block;
   width: 100%;
@@ -133,5 +133,14 @@ image {
   .column {
     flex: 100%;
     max-width: 100%; } }
+.main_image {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  right: 10%; }
+
+.description {
+  text-align: center;
+  right: 10%; }
 
 /*# sourceMappingURL=CAC.css.map */
