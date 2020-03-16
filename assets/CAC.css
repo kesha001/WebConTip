@@ -39,7 +39,7 @@ ul.topnav {
   position: relative;
   text-align: center;
   top: 10%;
-  transform: translateY(10%);
+  transform: translateY(100%);
   font-family: Arial, Helvetica, sans-serif; }
 
 body {
@@ -83,7 +83,7 @@ ul.topnav {
   position: relative;
   text-align: center;
   top: 10%;
-  transform: translateY(10%);
+  transform: translateY(100%);
   font-family: Arial, Helvetica, sans-serif; }
 
 * {
@@ -172,5 +172,31 @@ button[type=submit] {
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer; }
+
+input[type=search] {
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 10px;
+  align-self: center;
+  left: 5%;
+  top: 10%;
+  transform: translate(5%, 300%); }
+
+button[type=search] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  left: 95%;
+  top: 10%;
+  transform: translate(-1210%, 400%);
+  float: none; }
 
 /*# sourceMappingURL=CAC.css.map */

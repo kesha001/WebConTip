@@ -1,3 +1,4 @@
+@import "variables";
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -5,9 +6,10 @@ input[type=text] {
   box-sizing: border-box;
   border: 2px solid red;
   border-radius: 4px;
+  
 }
 button[type=submit] {
-  background-color: #4CAF50;
+  background-color: $button_color;
   border: none;
   color: white;
   padding: 16px 32px;
