@@ -34,6 +34,7 @@
     display: flex;
     flex-direction: column; }
   .container_profile .password_form {
+    margin-top: 5px;
     margin-bottom: 30px;
     display: block;
     width: 30%;
@@ -43,5 +44,10 @@
     font-size: 16px;
     background-color: white;
     padding: 12px 20px 12px 10px; }
+  @media screen and (max-width: 650px) {
+    .container_profile input[type=change] {
+      width: 60%; }
+    .container_profile .password_form {
+      width: 60%; } }
 
 /*# sourceMappingURL=profile.css.map */
