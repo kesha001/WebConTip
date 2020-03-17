@@ -14,7 +14,7 @@ ul.topnav {
       display: block;
       color: white;
       text-align: center;
-      padding: 14px 16px;
+      padding: 50px 16px;
       text-decoration: none;
       background-color: #86592d; }
     ul.topnav li a:hover {
@@ -24,17 +24,21 @@ ul.topnav {
     display: block;
     color: white;
     float: left;
-    margin: auto; }
+    margin-left: 10px;
+    margin-top: 5px; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   ul.topnav li.right,
   ul.topnav li {
-    float: none; }
+    float: none;
+    margin: auto; }
+    ul.topnav li.right a,
+    ul.topnav li a {
+      padding: 14px 16px; }
 
   ul.topnav h1 {
-    position: absolute;
-    top: 0px;
-    left: -5000px; } }
+    float: none;
+    text-align: center; } }
 .main_title {
   position: relative;
   text-align: center;
@@ -58,7 +62,7 @@ ul.topnav {
       display: block;
       color: white;
       text-align: center;
-      padding: 14px 16px;
+      padding: 50px 16px;
       text-decoration: none;
       background-color: #86592d; }
     ul.topnav li a:hover {
@@ -68,17 +72,21 @@ ul.topnav {
     display: block;
     color: white;
     float: left;
-    margin: auto; }
+    margin-left: 10px;
+    margin-top: 5px; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   ul.topnav li.right,
   ul.topnav li {
-    float: none; }
+    float: none;
+    margin: auto; }
+    ul.topnav li.right a,
+    ul.topnav li a {
+      padding: 14px 16px; }
 
   ul.topnav h1 {
-    position: absolute;
-    top: 0px;
-    left: -5000px; } }
+    float: none;
+    text-align: center; } }
 .main_title {
   position: relative;
   text-align: center;
@@ -204,5 +212,51 @@ button[type=search] {
   left: 4%;
   top: 50%;
   transform: translate(10%, 400%); }
+
+.container_profile {
+  position: relative;
+  left: 5%;
+  top: 100%;
+  transform: translate(10%, 10%);
+  margin-left: auto;
+  margin-right: auto; }
+  .container_profile .profile_info {
+    color: #8c8c8c;
+    font-family: "Times New Roman", Times, sans-serif;
+    font-size: 20px; }
+  .container_profile input[type=change] {
+    margin-bottom: 30px;
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 10px; }
+  .container_profile button[type=change] {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    width: auto;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    background-color: #4CAF50;
+    color: white;
+    align-self: flex-end;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column; }
+  .container_profile .password_form {
+    margin-bottom: 30px;
+    display: block;
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 10px; }
 
 /*# sourceMappingURL=CAC.css.map */

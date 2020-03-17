@@ -14,7 +14,7 @@ ul.topnav {
       display: block;
       color: white;
       text-align: center;
-      padding: 14px 16px;
+      padding: 50px 16px;
       text-decoration: none;
       background-color: #86592d; }
     ul.topnav li a:hover {
@@ -24,17 +24,21 @@ ul.topnav {
     display: block;
     color: white;
     float: left;
-    margin: auto; }
+    margin-left: 10px;
+    margin-top: 5px; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   ul.topnav li.right,
   ul.topnav li {
-    float: none; }
+    float: none;
+    margin: auto; }
+    ul.topnav li.right a,
+    ul.topnav li a {
+      padding: 14px 16px; }
 
   ul.topnav h1 {
-    position: absolute;
-    top: 0px;
-    left: -5000px; } }
+    float: none;
+    text-align: center; } }
 .main_title {
   position: relative;
   text-align: center;
