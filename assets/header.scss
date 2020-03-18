@@ -32,6 +32,14 @@ ul.topnav{
     margin-top: 5px;
   }
 }
+.main_title{
+  position: relative;
+  text-align: center;
+  top: 10%;
+  transform: translateY(100%);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5%;
+}
 @media screen and (max-width: 650px) {
   ul.topnav li.right,
   ul.topnav li {
@@ -45,12 +53,8 @@ ul.topnav{
     float:none;
     text-align: center;
     }
-}
-.main_title{
-  position: relative;
-  text-align: center;
-  top: 10%;
-  transform: translateY(100%);
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 5%;
+  .main_title{
+    transform: translateY(10%);
+    margin-bottom: 15%
+  }
 }
