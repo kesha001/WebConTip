@@ -30,15 +30,11 @@ ul.topnav{
     float: left;
     margin-left: 10px;
     margin-top: 5px;
-  }
-  p{
-    display: block;
-    color: $text_color;
-    float: left;
-    margin-left: 10px;
-    margin-top: 20px;
-    font-size: 1.1rem;
-    font-weight: 400;
+    p{
+      color: $text_color;
+      font-size: 1.0rem;
+      font-weight: 400;
+    }
   }
 }
 .main_title{
@@ -49,7 +45,7 @@ ul.topnav{
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 5%;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   ul.topnav li.right,
   ul.topnav li {
     float: none;
