@@ -26,6 +26,14 @@ ul.topnav {
     float: left;
     margin-left: 10px;
     margin-top: 5px; }
+  ul.topnav p {
+    display: block;
+    color: white;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 400; }
 
 .main_title {
   position: relative;
