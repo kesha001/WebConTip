@@ -23,5 +23,8 @@ button[type=submit] {
 @media screen and (max-width: 650px) {
   input[type=text] {
     width: 60%; } }
+.signup_form {
+  margin-top: 10%;
+  margin-bottom: 5%; }
 
 /*# sourceMappingURL=login_page.css.map */

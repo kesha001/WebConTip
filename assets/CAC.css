@@ -44,7 +44,8 @@ ul.topnav {
   text-align: center;
   top: 10%;
   transform: translateY(100%);
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5%; }
 
 body {
   margin: 0;
@@ -92,7 +93,8 @@ ul.topnav {
   text-align: center;
   top: 10%;
   transform: translateY(100%);
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5%; }
 
 * {
   box-sizing: border-box; }
@@ -195,6 +197,10 @@ button[type=submit] {
 @media screen and (max-width: 650px) {
   input[type=text] {
     width: 60%; } }
+.signup_form {
+  margin-top: 10%;
+  margin-bottom: 5%; }
+
 input[type=search] {
   width: 90%;
   box-sizing: border-box;
