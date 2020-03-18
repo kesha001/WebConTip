@@ -1,0 +1,44 @@
+@import "variables";
+
+.propose_form{
+  margin-top: 10%;
+  font-family: "Open Sans", Arial, sans-serif;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  input[type=link] {
+    width: 40%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid $border_color;
+    border-radius: 4px;
+    background-color: white;
+    resize: none;
+    margin-bottom: 15px;
+  }
+  input[type=text] {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 0;
+    display: block;
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid $border_color;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 10px;
+
+  }
+  @media screen and (max-width: 650px) {
+    input[type=link] {
+      width: 70%;
+    }
+    input[type=text]{
+      width: 70%;
+    }
+    .propose_form{
+      margin-top: 30%;
+    }
+  }
+}
