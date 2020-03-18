@@ -45,7 +45,7 @@ ul.topnav{
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 5%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   ul.topnav li.right,
   ul.topnav li {
     float: none;
@@ -60,6 +60,6 @@ ul.topnav{
     }
   .main_title{
     transform: translateY(10%);
-    margin-bottom: 15%
+    margin-bottom: 20%
   }
 }

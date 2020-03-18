@@ -7,6 +7,7 @@
   transform: translate(+10%, +0%);
   margin-left: auto;
   margin-right: 15%;
+  margin-top: 10%;
   .profile_info{
     color: $profile_text;
     font-family: "Times New Roman", Times, sans-serif;
@@ -50,7 +51,7 @@
     background-color: white;
     padding: 12px 20px 12px 10px;
   }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 1100px) {
     input[type=change] {
       width: 60%;
     }

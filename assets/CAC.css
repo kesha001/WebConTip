@@ -39,7 +39,7 @@ ul.topnav {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 5%; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   ul.topnav li.right,
   ul.topnav li {
     float: none;
@@ -54,7 +54,7 @@ ul.topnav {
 
   .main_title {
     transform: translateY(10%);
-    margin-bottom: 15%; } }
+    margin-bottom: 20%; } }
 body {
   margin: 0;
   background-color: white; }
@@ -96,7 +96,7 @@ ul.topnav {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 5%; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   ul.topnav li.right,
   ul.topnav li {
     float: none;
@@ -111,7 +111,7 @@ ul.topnav {
 
   .main_title {
     transform: translateY(10%);
-    margin-bottom: 15%; } }
+    margin-bottom: 20%; } }
 * {
   box-sizing: border-box; }
 
@@ -178,7 +178,7 @@ ul.topnav {
   .container {
     margin-top: 10%; } }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   .column {
     flex: 100%;
     max-width: 100%; } }
@@ -217,7 +217,7 @@ button[type=submit] {
   margin: 4px 2px;
   cursor: pointer; }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1100px) {
   input[type=text] {
     width: 60%; } }
 .signup_form {
@@ -251,7 +251,7 @@ button[type=search] {
   transform: translate(70%, 250%);
   margin-bottom: 15%; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   button[type=search] {
     margin-bottom: 40%; } }
 .container_profile {
@@ -260,7 +260,8 @@ button[type=search] {
   top: 100%;
   transform: translate(10%, 0%);
   margin-left: auto;
-  margin-right: 15%; }
+  margin-right: 15%;
+  margin-top: 10%; }
   .container_profile .profile_info {
     color: #8c8c8c;
     font-family: "Times New Roman", Times, sans-serif;
@@ -300,7 +301,7 @@ button[type=search] {
     font-size: 16px;
     background-color: white;
     padding: 12px 20px 12px 10px; }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 1100px) {
     .container_profile input[type=change] {
       width: 60%; }
     .container_profile .password_form {
@@ -335,7 +336,7 @@ button[type=search] {
     font-size: 16px;
     background-color: white;
     padding: 12px 20px 12px 10px; }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 1100px) {
     .propose_form input[type=link] {
       width: 70%; }
     .propose_form input[type=text] {
