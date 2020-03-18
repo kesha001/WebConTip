@@ -48,6 +48,8 @@
     .container_profile input[type=change] {
       width: 60%; }
     .container_profile .password_form {
-      width: 60%; } }
+      width: 60%; }
+    .container_profile .container_profile {
+      transform: translate(0%, 10%); } }
 
 /*# sourceMappingURL=profile.css.map */

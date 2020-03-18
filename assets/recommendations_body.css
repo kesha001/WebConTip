@@ -60,7 +60,9 @@ ul.topnav {
   width: 100%;
   height: auto;
   transition: .5s ease;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  margin-bottom: 10%;
+  margin-top: 5%; }
 
 .middle {
   transition: .5s ease;

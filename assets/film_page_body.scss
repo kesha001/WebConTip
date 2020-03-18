@@ -1,12 +1,20 @@
 @import "variables";
 .main_image{
   position: absolute;
-  top:15%;
+  display: inline-block;
+  top:30%;
   left:10%;
-  right: 10%
+  right: 10%;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1300px) {
   .main_image {
-    top: 50%;
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main_image {
+    top: 70%;
   }
 }
