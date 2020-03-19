@@ -381,7 +381,6 @@ button[type=change] {
     width: 90%; } }
 .propose_form {
   font-family: "Open Sans", Arial, sans-serif;
-  margin-bottom: 10%;
   background-color: #ffe6cc;
   text-align: left;
   padding: 10px; }
