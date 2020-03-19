@@ -78,6 +78,9 @@ a {
   font-size: 20px;
   margin-bottom: 30%; }
 
+.disc {
+  font-size: 30px; }
+
 .image {
   opacity: 1;
   display: block;
@@ -97,7 +100,7 @@ a {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 30%;
   transform: translate(-30%, -30%);
   -ms-transform: translate(-30%, -30%); }
@@ -144,7 +147,7 @@ a {
     font-size: 60%;
     padding: 16px 32px;
     font-family: "Bradley Hand"; } }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .column {
     flex: 100%;
     max-width: 100%; }
@@ -152,9 +155,12 @@ a {
   .container {
     margin-top: 10%; }
 
+  .container {
+    font-size: 10px; }
+
   .text {
     color: black;
-    font-size: 50%;
+    font-size: 40%;
     padding: 16px 32px;
     font-family: "Bradley Hand"; } }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */

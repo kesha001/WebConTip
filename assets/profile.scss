@@ -51,12 +51,9 @@
   }
   @media screen and (max-width: 1100px) {
     input[type=change] {
-      width: 60%;
+      width: 90%;
     }
     .password_form{
       width: 90%;
-    }
-    .container_profile{
-      transform: translate(+0%, +10%);
     }
   }
