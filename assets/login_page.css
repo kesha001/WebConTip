@@ -1,4 +1,8 @@
-input[type=text] {
+.login_container {
+  margin: auto;
+  padding: 5%; }
+
+input[type=login] {
   margin-top: 5px;
   margin-bottom: 25px;
   display: block;
@@ -19,6 +23,10 @@ button[type=submit] {
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer; }
+
+label {
+  font-size: 20px;
+  font-family: sans-serif; }
 
 @media screen and (max-width: 1100px) {
   input[type=text] {

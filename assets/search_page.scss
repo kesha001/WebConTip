@@ -1,33 +1,36 @@
 @import "variables";
-input[type=search] {
-  width: 90%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  padding: 12px 20px 12px 10px;
-  align-self: center;
-  left: 5%;
-  top: 10%;
-  transform: translate(+5%, +200%);
+.search_container{
+  padding: 5%;
+  margin: auto;
+
 }
-button[type=search] {
-  display: block;
-  background-color: $button_color;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  left: 4%;
-  top: 50%;
-  transform: translate(+70%, +250%);
-  margin-bottom: 15%;
-}
+  input[type=search] {
+    width: 90%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 10px;
+    align-self: center;
+    transform: translate(+5%, +200%);
+  }
+  button[type=search] {
+    display: block;
+    background-color: $button_color;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    left: 4%;
+    top: 50%;
+    transform: translate(+70%, +250%);
+    margin-bottom: 15%;
+  }
 @media screen and (max-width: 1100px) {
   button[type=search] {
-    margin-bottom: 40%;
+    margin-bottom: 30%;
   }
 }

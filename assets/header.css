@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  background-color: white; }
+  background-color: #cccccc;
+  max-width: 1200px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto; }
 
 ul.topnav {
   list-style-type: none;
@@ -21,23 +25,22 @@ ul.topnav {
       background-color: #ddd;
       color: black; }
   ul.topnav h1 {
-    display: block;
     color: white;
     float: left;
     margin-left: 10px;
-    margin-top: 5px; }
-    ul.topnav h1 p {
-      color: white;
-      font-size: 1.0rem;
-      font-weight: 400; }
+    margin-top: 25px;
+    font-size: 50px; }
 
 .main_title {
   position: relative;
   text-align: center;
-  top: 10%;
-  transform: translateY(100%);
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 5%; }
+  margin: 5%;
+  font-family: Roundhand;
+  font-size: 130%; }
+
+.main {
+  background-color: white; }
 
 @media screen and (max-width: 1100px) {
   ul.topnav li.right,
@@ -54,6 +57,6 @@ ul.topnav {
 
   .main_title {
     transform: translateY(10%);
-    margin-bottom: 20%; } }
+    margin-bottom: 10%; } }
 
 /*# sourceMappingURL=header.css.map */

@@ -1,3 +1,7 @@
+.search_container {
+  padding: 5%;
+  margin: auto; }
+
 input[type=search] {
   width: 90%;
   box-sizing: border-box;
@@ -7,8 +11,6 @@ input[type=search] {
   background-color: white;
   padding: 12px 20px 12px 10px;
   align-self: center;
-  left: 5%;
-  top: 10%;
   transform: translate(5%, 200%); }
 
 button[type=search] {
@@ -27,6 +29,6 @@ button[type=search] {
 
 @media screen and (max-width: 1100px) {
   button[type=search] {
-    margin-bottom: 40%; } }
+    margin-bottom: 30%; } }
 
 /*# sourceMappingURL=search_page.css.map */
