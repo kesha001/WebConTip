@@ -58,5 +58,11 @@ ul.topnav {
   .main_title {
     transform: translateY(10%);
     margin-bottom: 10%; } }
+@media screen and (max-width: 1250) {
+  body {
+    margin-bottom: 0; } }
+a {
+  text-decoration: none;
+  color: black; }
 
 /*# sourceMappingURL=header.css.map */

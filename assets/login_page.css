@@ -6,7 +6,7 @@ input[type=login] {
   margin-top: 5px;
   margin-bottom: 25px;
   display: block;
-  width: 30%;
+  width: 60%;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -29,8 +29,8 @@ label {
   font-family: sans-serif; }
 
 @media screen and (max-width: 1100px) {
-  input[type=text] {
-    width: 60%; } }
+  input[type=login] {
+    width: 90%; } }
 .signup_form {
   margin-top: 10%;
   margin-bottom: 5%; }
