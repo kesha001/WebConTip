@@ -53,7 +53,8 @@ ul.topnav {
     margin: auto; }
     ul.topnav li.right a,
     ul.topnav li a {
-      padding: 14px 16px; }
+      padding: 14px 16px;
+      transform: translateY(0%); }
 
   ul.topnav h1 {
     float: none;
