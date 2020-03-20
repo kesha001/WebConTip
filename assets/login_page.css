@@ -23,7 +23,8 @@ input[type=login] {
 
 button[type=submit] {
   display: block;
-  background-color: #4CAF50;
+  background-color: #916953;
+  border-radius: 4px;
   border: none;
   color: white;
   padding: 16px 32px;

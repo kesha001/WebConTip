@@ -62,7 +62,8 @@ ul.topnav {
 
   .main_title {
     transform: translateY(10%);
-    margin-bottom: 10%; } }
+    margin-bottom: 10%;
+    font-size: 100%; } }
 @media screen and (max-width: 1250) {
   body {
     margin-bottom: 0; } }
