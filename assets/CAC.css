@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Bellota");
+@import url("https://fonts.googleapis.com/css?family=Bellota");
+@import url("https://fonts.googleapis.com/css?family=Bellota|Varela+Round");
 body {
   margin: 0;
   background-color: #cccccc;
@@ -11,16 +14,18 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333; }
+  background-color: #333;
+  font-family: 'Pacifico', cursive; }
   ul.topnav li {
     float: right; }
     ul.topnav li a {
       display: block;
       color: white;
       text-align: center;
-      padding: 50px 16px;
+      padding: 20px 16px;
       text-decoration: none;
-      background-color: #86592d; }
+      background-color: #333;
+      transform: translateY(100%); }
     ul.topnav li a:hover {
       background-color: #ddd;
       color: black; }
@@ -28,7 +33,7 @@ ul.topnav {
     color: white;
     float: left;
     margin-left: 10px;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 50px; }
 
 .main_title {
@@ -37,7 +42,8 @@ ul.topnav {
   font-family: Arial, Helvetica, sans-serif;
   margin: 5%;
   font-family: Roundhand;
-  font-size: 130%; }
+  font-size: 130%;
+  font-family: 'Bellota', cursive; }
 
 .main {
   background-color: white; }
@@ -78,16 +84,18 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333; }
+  background-color: #333;
+  font-family: 'Pacifico', cursive; }
   ul.topnav li {
     float: right; }
     ul.topnav li a {
       display: block;
       color: white;
       text-align: center;
-      padding: 50px 16px;
+      padding: 20px 16px;
       text-decoration: none;
-      background-color: #86592d; }
+      background-color: #333;
+      transform: translateY(100%); }
     ul.topnav li a:hover {
       background-color: #ddd;
       color: black; }
@@ -95,7 +103,7 @@ ul.topnav {
     color: white;
     float: left;
     margin-left: 10px;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 50px; }
 
 .main_title {
@@ -104,7 +112,8 @@ ul.topnav {
   font-family: Arial, Helvetica, sans-serif;
   margin: 5%;
   font-family: Roundhand;
-  font-size: 130%; }
+  font-size: 130%;
+  font-family: 'Bellota', cursive; }
 
 .main {
   background-color: white; }
@@ -260,7 +269,14 @@ a {
     top: 70%; } }
 .login_container {
   margin: auto;
-  padding: 5%; }
+  padding: 5%;
+  background-color: white; }
+
+.signup_container {
+  margin: auto;
+  padding: 5%;
+  background-color: #404040;
+  color: white; }
 
 input[type=login] {
   margin-top: 5px;
@@ -330,9 +346,12 @@ button[type=search] {
   margin-left: auto;
   padding: 5%; }
 
+.profile_titles {
+  font-family: 'Varela Round', sans-serif; }
+
 .profile_info {
   color: #404040;
-  font-family: "Times New Roman", Times, sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 25px; }
 
 input[type=change] {
@@ -405,9 +424,9 @@ button[type=change] {
     margin-bottom: 15px; }
   @media screen and (max-width: 1100px) {
     .propose_form input[type=link] {
-      width: 70%; }
+      width: 90%; }
     .propose_form input[type=text] {
-      width: 70%; }
+      width: 90%; }
     .propose_form .propose_form {
       margin-left: 10%; } }
 

@@ -5,10 +5,12 @@
   margin-left: auto;
   padding: 5%;
 }
-
+.profile_titles{
+  font-family: 'Varela Round', sans-serif;
+}
   .profile_info{
     color: $profile_text;
-    font-family: "Times New Roman", Times, sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 25px;
   }
   input[type=change] {
