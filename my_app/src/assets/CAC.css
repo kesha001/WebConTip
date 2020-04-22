@@ -40,10 +40,12 @@ ul.topnav {
   position: relative;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 5%;
   font-family: Roundhand;
   font-size: 130%;
   font-family: 'Bellota', cursive; }
+  .main_title h1 {
+    margin-top: 0;
+    padding: 50px; }
 
 .main {
   background-color: white; }
@@ -112,10 +114,12 @@ ul.topnav {
   position: relative;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 5%;
   font-family: Roundhand;
   font-size: 130%;
   font-family: 'Bellota', cursive; }
+  .main_title h1 {
+    margin-top: 0;
+    padding: 50px; }
 
 .main {
   background-color: white; }
@@ -259,11 +263,8 @@ a {
     width: 60%;
     margin-bottom: 5%; } }
 .main_image {
-  position: absolute;
-  display: inline-block;
-  top: 30%;
-  left: 10%;
-  right: 10%; }
+  position: relative;
+  padding: 3%; }
 
 @media screen and (max-width: 1300px) {
   .main_image {

@@ -1,10 +1,7 @@
 @import "variables";
 .main_image{
-  position: absolute;
-  display: inline-block;
-  top:30%;
-  left:10%;
-  right: 10%;
+  position: relative;
+  padding: 3%;
 }
 
 @media screen and (max-width: 1300px) {

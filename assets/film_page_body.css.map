@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACA,WAAW;EACT,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,YAAY;EACrB,GAAG,EAAC,GAAG;EACP,IAAI,EAAC,GAAG;EACR,KAAK,EAAE,GAAG;;AAGZ,qCAAsC;EACpC,WAAY;IACV,GAAG,EAAE,GAAG;AAIZ,oCAAqC;EACnC,WAAY;IACV,GAAG,EAAE,GAAG",
-"sources": ["film_page_body.scss"],
-"names": [],
-"file": "film_page_body.css"
-}
