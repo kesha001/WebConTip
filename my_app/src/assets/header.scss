@@ -25,10 +25,14 @@ ul.topnav{
       text-decoration: none;
       background-color: $buttons_back_color;
       transform: translateY(+100%);
+
     }
     a:hover{
       background-color: $buttons_hover_color;
       color: black;
+    }
+    .active{
+        background-color:#86592d;
     }
   }
   h1{
@@ -64,6 +68,7 @@ ul.topnav{
     a{
       padding: 14px 16px;
       transform: translateY(+0%);
+
     }
   }
   ul.topnav h1{
