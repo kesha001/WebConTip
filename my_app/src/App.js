@@ -8,11 +8,12 @@ import LoginPage from "./components/LoginPage";
 import ProfilePage from "./components/ProfilePage";
 import SearchPage from "./components/SearchPage";
 import WatchedMoviesPage from "./components/WatchedMoviesPage";
+import history from './components/history';
 
 
 function App() {
   return (
-      <Router>
+      <Router history={history}>
           <Route exact path="/" component={RecommendationsPage} />
           <Route path="/login/" component={LoginPage} />
           <Route path="/profile/" component={ProfilePage} />

@@ -54,6 +54,38 @@
     background-color: white;
     padding: 12px 20px 12px 10px;
   }
+  /* Hide the default checkbox */
+.custom-sq input[type=checkbox] {
+  display: none;
+}
+
+/* Draw our custom check box */
+.custom-sq {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 5px;
+}
+.custom-sq label {
+  cursor: pointer;
+}
+.custom-sq label:before {
+  display: inline-block;
+  width: 20px;
+  margin-right: 5px;
+  content: "\00a0";
+  text-align: center;
+  background: #eee;
+}
+.custom-sq label:hover::before{
+  background: #aaa;
+}
+
+/* On check */
+.custom-sq input:checked ~ label:before {
+  content: "\2605";
+  background: #3f6cb5;
+  color: #fff;
+}
   @media screen and (max-width: 1100px) {
     input[type=change] {
       width: 90%;

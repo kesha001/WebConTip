@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import history from './history';
 
 import LoginForm from "./LoginForm";
 import SignUpForm from "./SignUpForm";
@@ -10,8 +11,8 @@ class LoginPage extends Component{
         return (
             <div>
             <LoginHeader/>
-            <LoginForm/>
-            <SignUpForm/>
+            <LoginForm history={this.props.history}/>
+            <SignUpForm history={this.props.history}/>
             </div>
         )
     }
