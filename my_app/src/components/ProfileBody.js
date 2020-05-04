@@ -96,7 +96,33 @@ class ProfileBody extends Component{
             <div className="main_title"><h1>My Profile</h1></div>
                 <h1 className="profile_titles">Profile Info</h1>
                 <p className="profile_info"></p><InfoText/>
-                
+                <h1 className="profile_titles"><br/><br/>Change Profile Info <br/><br/></h1>
+                <h2 className="profile_titles">Change Favorite Genres</h2>
+                <form method="post" action="#">
+                        <div className="gtr-uniform">
+                            <div className="col-6 col-12-small">
+                                        {this.state.data.map(genre => {
+                                        let genre_name = "genre" + genre.id;
+                                        return (
+                                            <Checkbox value={genre.id} key={genre.id} name={genre_name} text={genre.name} />
+                                        );
+                                    })}
+                                </div>
+                                <button type="submit" value="Submit" className="primary" onClick={this.handleGenreSubmit}>Submit</button>
+
+                            </div>
+                        </form>
+                <h2 className="profile_titles">Change Email<br/><br/></h2>
+                <form>
+                    <input type="change" name="change" value={this.state.email} onChange={this.handleEmailChange} placeholder="New Email.."/>
+                    <button type="submit" onClick={this.handleEmailSubmit}>Change</button>
+                </form>
+                <h2 className="profile_titles">Change Password<br/></h2>
+                <form>
+                    <input type="password" name="change" className="password_form" placeholder="New Password.."/>
+                    <input type="password" name="change" className="password_form" placeholder="Retype new password.."/>
+                    <button type="change">Change</button>
+                </form>
             </div>
             </div>
         )

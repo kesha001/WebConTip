@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<ul class="topnav"> 
+<ul class="topnav">
   <h1>ConTip</h1>
-  <li><a href="login.html">Log in</a></li>
+  <li><a onclick='logOut(event)' id='logout'>Log out</a></li>
   <li><a href="watched_movies.html">Watched Movies</a></li>
   <li><a href="search.html">Search</a></li>
   <li><a href="profile.html" style="background-color:#86592d;">Profile</a></li>
@@ -18,7 +18,7 @@
 <div class="container_profile main">
 <div class="main_title"><h1>My Profile</h1></div>
     <h1 class="profile_titles">Profile Info</h1>
-    <p class=profile_info><br>Username: my_username<br><br><br>Email: my_email@email.org<br><br><br>Full name: Firstname Lastname</p>
+    <p class=profile_info id='usename'><br>Username: my_username<br><br><br></p><p id='email'>Email: my_email@email.org<br></p>
     <h1 class="profile_titles"><br><br>Change Profile Info <br><br></h1>
     <h2 class="profile_titles">Change Email<br><br></h2>
     <form>
@@ -42,6 +42,6 @@
         <button type="submit">Send</button>
         </form>
     </div>
-
+<script src='js/index.js'></script>
 </body>
 </html>
