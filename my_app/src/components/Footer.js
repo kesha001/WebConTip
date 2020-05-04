@@ -6,7 +6,7 @@ class Footer extends Component{
         return(
             <div>
             <div className="propose_form">
-                    <h1>YOU THINK WE DON'T KNOW THAT ONE UNIQUE, <br/>
+                    <h1>YOU THINK WE DON`T KNOW THAT ONE UNIQUE, <br/>
                     ARTISTIC, EXTRAORDINARY MOVIE? <br/> RECOMMEND IT TO US!<br/> <br/> </h1>
                     <form>
                     <input type="text" placeholder="Movie We Have To Check Out!"/>

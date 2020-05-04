@@ -13,7 +13,6 @@ class InfoText extends Component {
 
 	componentDidMount() {
 		const token = localStorage.getItem('jwt access');
-        console.log(token);
         const options = {
             method: "GET",
             headers: {
@@ -24,7 +23,6 @@ class InfoText extends Component {
         }
 		fetch("http://localhost:8000/api/v1/account/users/me/", options)
 			.then(response => {
-				console.log(response);
 				if (response.status > 400) {
 					return this.setState(() => {
 						return { placeholder: "Something went wrong!" };
@@ -33,7 +31,6 @@ class InfoText extends Component {
 				return response.json();
 			})
 			.then(data => {
-				console.log(data);
 				this.setState(() => {
 					return {
 						data,

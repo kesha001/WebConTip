@@ -1,21 +1,18 @@
 import React, { Component } from "react";
-import RecommendationFilm from "./RecommendationFilm";
+import MovieList from "./MovieList";
+import PropTypes from 'prop-types';
 
 class RecommendationsBody extends Component{
+    static get propTypes() {
+    return {
+        history: PropTypes.any,
+    };
+}
     render() {
         return (
             <div>
                 <div className="main_title"><h1>Your recommendations for today</h1></div>
-                <div className="row">
-                    <div className="column">
-                          <RecommendationFilm image="https://skyandtelescope.org/wp-content/uploads/Interstellar_spaceman_480px-736x490-c-default.jpg" href="/" title="Vovk" genre="fantastic"/>
-                          <RecommendationFilm image="https://skyandtelescope.org/wp-content/uploads/Interstellar_spaceman_480px-736x490-c-default.jpg" href="/" title="vovk" genre="fantastic"/>
-                    </div>
-                    <div className="column">
-                         <RecommendationFilm image="https://skyandtelescope.org/wp-content/uploads/Interstellar_spaceman_480px-736x490-c-default.jpg" href="/" title="vovk" genre="fantastic"/>
-                         <RecommendationFilm image="https://skyandtelescope.org/wp-content/uploads/Interstellar_spaceman_480px-736x490-c-default.jpg" href="/" title="vovk" genre="fantastic"/>
-                    </div>
-                </div>
+                    <MovieList history={this.props.history}/>
             </div>
 
         )

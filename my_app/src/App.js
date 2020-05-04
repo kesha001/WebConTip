@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import RecommendationsPage from "./components/RecommendationsPage";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./assets/CAC.css";
 import LoginPage from "./components/LoginPage";
 import ProfilePage from "./components/ProfilePage";

@@ -1,17 +1,23 @@
 import React, { Component } from "react";
+import Header from './Header';
+import PropTypes from "prop-types";
 
-import NavBar from "./NavBar";
-import RecommendationBody from "./RecommendationBody";
 import Footer from "./Footer";
-
+import MovieList from "./MovieList";
 
 class RecommendationsPage extends Component{
+    static get propTypes() {
+    return {
+        history: PropTypes.any,
+    };
+}
     render() {
         return (
             <div>
-                <NavBar/>
+                <Header/>
                 <div className="main">
-                    <RecommendationBody/>
+                <div className="main_title"><h1>Your recommendations for today</h1></div>
+                    <MovieList history={this.props.history}/>
                 </div>
                 <Footer/>
             </div>

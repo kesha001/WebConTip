@@ -8,13 +8,14 @@ body{
   margin-right: auto;
   margin-left: auto;
 }
-ul.topnav{
+.topnav{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: $background_nav;
   font-family: 'Pacifico', cursive;
+
   li{
     float: right;
     a{
@@ -57,30 +58,111 @@ ul.topnav{
   }
 
 }
+.topnav a.icon {
+position: absolute;
+left: +10000%;
+display: none;
+  background: black;
+  display: block;
+  right: 0;
+  top: 0;
+}
+
 .main{
   background-color: white;
 }
 @media screen and (max-width: 1100px) {
-  ul.topnav li.right,
-  ul.topnav li {
-    float: none;
-    margin: auto;
-    a{
+    .topnav li{
+        position: absolute;
+        left: +10000%;
+        display: none;
+    }
+    .topnav a {
+      color: white;
       padding: 14px 16px;
-      transform: translateY(+0%);
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+
+    .topnav a.icon {
+      left: auto;
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav-responsive{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $background_nav;
+        font-family: 'Pacifico', cursive;
+
+        li{
+            float: none;
+            margin: auto;
+          a{
+            display: block;
+            color: $text_color;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: $buttons_back_color;
+            transform: translateY(+0%);
+
+          }
+          a:hover{
+            background-color: $buttons_hover_color;
+            color: black;
+          }
+          .active{
+              background-color:#86592d;
+          }
+        }
+        h1{
+          color: $text_color;
+          float: none;
+          margin-left: 10px;
+          margin-top: 20px;
+          text-align: center;
+          font-size: 50px;
+        }
+        a {
+          color: white;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+          display: block;
+        }
+        a.icon {
+
+          background: black;
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
 
     }
-  }
-  ul.topnav h1{
-    float:none;
-    text-align: center;
+    .topnav{
+            h1{
+              float:none;
+              text-align: center;
+              }
+        }
+        .main_title{
+          transform: translateY(10%);
+          margin-bottom: 10%;
+          font-size: 100%;
+        }
+
     }
-  .main_title{
-    transform: translateY(10%);
-    margin-bottom: 10%;
-    font-size: 100%;
-  }
-}
+
+
 
 @media screen and (max-width: 1250){
   body{

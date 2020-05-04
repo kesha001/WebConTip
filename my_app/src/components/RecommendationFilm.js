@@ -1,18 +1,25 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 
 
 class RecommendationsFilm extends Component{
+    static get propTypes() {
+    return {
+        href: PropTypes.any,
+        title: PropTypes.any,
+        image: PropTypes.any,
+        genre: PropTypes.any,
+    };
+}
     render() {
         return (
-            <div>
-                <div className="container">
+                <article className="container">
                     <a href={this.props.href}><img src={this.props.image} alt="Avatar" className="image"/></a>
                     <div className="middle">
-                      <div className="text"><a href=""><div className="film_inside_name">{this.props.title}</div>Genre:<br/> {this.props.genre}</a></div>
+                      <div className="text"><a href=""><div className="">{this.props.title}</div>Genre:<br/> {this.props.genre}</a></div>
                     </div>
                     <div className="disc">{this.props.title}</div>
-                </div>`
-            </div>
+                </article>
         )
     }
 }

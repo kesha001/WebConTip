@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import history from './history';
+import PropTypes from 'prop-types';
 
 import LoginForm from "./LoginForm";
 import SignUpForm from "./SignUpForm";
@@ -7,6 +7,11 @@ import SignUpForm from "./SignUpForm";
 import LoginHeader from "./LoginHeader";
 
 class LoginPage extends Component{
+    static get propTypes() {
+    return {
+        history: PropTypes.any,
+    };
+}
     render() {
         return (
             <div>

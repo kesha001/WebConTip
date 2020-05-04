@@ -52,7 +52,6 @@ class SignUpForm extends Component{
       }
       fetch('http://localhost:8000/api/v1/account/users/', options)
           .then(res => {
-              console.log(res);
               if (res.status != 201){
                   alert("Something went wrong");
               }

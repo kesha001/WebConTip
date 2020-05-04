@@ -36,7 +36,6 @@ class LoginForm extends Component{
 
         fetch('http://localhost:8000/api/v1/auth/login/', options)
             .then(res => {
-                console.log(res);
                 if (res.status != 200){
                     alert("wrong credentials");
                     return false;
@@ -47,7 +46,6 @@ class LoginForm extends Component{
             })
             .then(data => {
                 if(data){
-                    console.log(data);
                     localStorage.setItem('jwt access', data.access);
                     localStorage.setItem('jwt refresh', data.refresh);
                     this.props.history.push("/profile/");
