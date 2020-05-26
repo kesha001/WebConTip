@@ -18,10 +18,10 @@ const Button = (props) => {
 
 	if (props.id === "DeleteProfileButton") {
 		return (
-            <div className="col-6 col-12-medium">
-				<ul className="delete_button no_stile">
+			<div className="col-6 col-12-medium">
+				<ul className="actions stacked">
 					{/* <li><a href="#" className="button small fit">Delete Account</a></li> */}
-					<li id={ props.id }><a href="#" className="delete_button" onClick={ onClick } >{ props.buttonName }</a></li>
+					<li id={ props.id }><a href="#" className="button small fit" onClick={ onClick } >{ props.buttonName }</a></li>
 				</ul>
 			</div>
 		);

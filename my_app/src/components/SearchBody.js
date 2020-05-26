@@ -34,7 +34,7 @@ class SearchBody extends Component{
 				'Authorization': `JWT ${access_token}`
             }
         }
-        fetch("http://yyr3ll.pythonanywhere.com/api/v1/app/genre/list/", options)
+        fetch("http://localhost:8000/api/v1/app/genre/list/", options)
             .then(response => {
                 if (response.status > 400) {
                     this.props.history.push("/login");

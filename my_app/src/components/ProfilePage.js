@@ -13,7 +13,7 @@ class ProfilePage extends Component{
 }
     render() {
         return (
-            <div>
+            <div className="main">
             <Header/>
             <ProfileBody history={this.props.history}/>
             <Footer/>

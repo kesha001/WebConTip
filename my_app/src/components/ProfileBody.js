@@ -1,63 +1,154 @@
 import React, { Component, ListItem } from "react";
 
-import InfoText from "./InfoText";
-import Checkbox from "./Checkbox";
+
 import history from './history';
 
+import Checkbox from "./Checkbox";
+import PasswordInputField from "./PasswordInputFields";
+import SendButton from "./SendButton";
+import InfoText from "./InfoText";
+import WelcomeText from "./WelcomeText";
 
 class ProfileBody extends Component{
 
     constructor(props) {
-            super(props);
-            this.state = {
-                email: '',
-                password: '',
-                confirmPassword: '',
-                data: [],
-                loaded: false,
-                placeholder: "Loading"
-            };
-        }
+        super(props);
+        this.state = {
+            email: '',
+            password: '',
+            confirmPassword: '',
+            deletePassword: '',
+            data: [],
+            loaded: false,
+            placeholder: "Loading",
+        };
+    }
 
         handleEmailChange = event => {
             this.setState({
                 email: event.target.value
             })
         }
+
         handlePasswordChange = event => {
             this.setState({
                 password: event.target.value
             })
         }
+
         handleConfirmPasswordChange = event => {
             this.setState({
                 confirmPassword: event.target.value
             })
         }
+
+        handleCurrentPasswordChange = event => {
+            this.setState({
+                currentPassword: event.target.value
+            })
+        }
+
+        handleDeletePasswordChange = event => {
+            this.setState({
+                deletePassword: event.target.value
+            })
+        }
+
         handleGenreSubmit = event => {
             alert("Genre change submitted!");
             event.preventDefault();
         }
-        handleEmailSubmit = event => {
-            alert("Email change submitted!");
+
+
+        handleEmailSubmit = (event, addToast) => {
             event.preventDefault();
-            this.setState({
-                email: event.target.value
-            })
-        }
-        handlePasswordSubmit = event => {
+            // Update user email
+    		const access_token = localStorage.getItem('jwt access');
+            let options = {
+                method: "PATCH",
+                body: JSON.stringify({ email: this.state.email }),
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+    				'Authorization': `JWT ${ access_token }`
+                }
+            }
+            fetch(`http://localhost:8000/api/v1/account/users/me/`, options)
+                .then(res => {
+                    console.log(res);
+                    if (res.status != 200){
+                        addToast("Something went wrong", { appearance: 'error', autoDismiss: true, });
+                    }
+                    else {
+                        this.props.history.push("/profile/");
+                        addToast("Email changed successfully!", { appearance: 'success', autoDismiss: true, });
+                    }
+                    return res.json();
+                });
+            }
+
+
+        handlePasswordSubmit = (event, addToast) => {
             if (this.state.password == this.state.confirmPassword) {
-                alert("Password change submitted!");
                 event.preventDefault();
+                // Update user password
+                const access_token = localStorage.getItem('jwt access');
+                let options = {
+                    method: "POST",
+                    body: JSON.stringify({ new_password: this.state.password, re_new_password: this.state.confirmPassword, current_password: this.state.currentPassword }),
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                        'Authorization': `JWT ${ access_token }`
+                    }
+                }
+                fetch(`http://localhost:8000/api/v1/account/users/set_password/`, options)
+                    .then(res => {
+                        console.log(res);
+                        if (res.status != 204){
+                            addToast("Something went wrong", { appearance: 'error', autoDismiss: true, });
+                        }
+                        else {
+                            this.props.history.push("/login/");
+                        }
+                        return res.json();
+                    });
             }
             else {
-                alert("Passwords do not match!");
                 event.preventDefault();
+                addToast("Passwords do not match!", { appearance: 'error', autoDismiss: true, });
             }
         }
-        handleDeleteProfile = event => {
-            alert("Profile deletion request submitted!");
+
+
+    handleDeleteProfile = (event, addToast) => {
+        event.preventDefault();
+        addToast("Profile deletion request submitted!", { appearance: 'info', autoDismiss: true, });
+        // Delete user
+        const access_token = localStorage.getItem('jwt access');
+        let options = {
+            method: "DELETE",
+            body: JSON.stringify({ current_password: this.state.deletePassword }),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization': `JWT ${ access_token }`
+            }
         }
+        fetch(`http://localhost:8000/api/v1/account/users/me/`, options)
+            .then(res => {
+                console.log(res);
+                if (res.status != 204){
+                    addToast("Something went wrong", { appearance: 'error', autoDismiss: true, });
+                }
+                else {
+                    this.props.history.push("/login/");
+                }
+                return res.json();
+            });
+    }
+
+
 
         componentDidMount() {
     		const token = localStorage.getItem('jwt access');
@@ -97,32 +188,54 @@ class ProfileBody extends Component{
                 <h1 className="profile_titles">Profile Info</h1>
                 <p className="profile_info"></p><InfoText/>
                 <h1 className="profile_titles"><br/><br/>Change Profile Info <br/><br/></h1>
-                <h2 className="profile_titles">Change Favorite Genres</h2>
-                <form method="post" action="#">
-                        <div className="gtr-uniform">
-                            <div className="col-6 col-12-small">
-                                        {this.state.data.map(genre => {
-                                        let genre_name = "genre" + genre.id;
-                                        return (
-                                            <Checkbox value={genre.id} key={genre.id} name={genre_name} text={genre.name} />
-                                        );
-                                    })}
-                                </div>
-                                <button type="submit" value="Submit" className="primary" onClick={this.handleGenreSubmit}>Submit</button>
-
-                            </div>
-                        </form>
                 <h2 className="profile_titles">Change Email<br/><br/></h2>
                 <form>
-                    <input type="change" name="change" value={this.state.email} onChange={this.handleEmailChange} placeholder="New Email.."/>
-                    <button type="submit" onClick={this.handleEmailSubmit}>Change</button>
+                    <input
+                        type="change"
+                        name="profile_email"
+                        id="profile_email"
+                        value={ this.state.email }
+                        onChange={ this.handleEmailChange }
+                        placeholder="New Email" />
+                    <input
+                        type="password"
+                        className="password_form"
+                        name="#" id="#"
+                        placeholder="Enter Password To Confirm" />
+                    <SendButton buttonName="Change!" onSubmit={ this.handleEmailSubmit } toastMessage="Email changed successfully" />
                 </form>
                 <h2 className="profile_titles">Change Password<br/></h2>
                 <form>
-                    <input type="password" name="change" className="password_form" placeholder="New Password.."/>
-                    <input type="password" name="change" className="password_form" placeholder="Retype new password.."/>
-                    <button type="change">Change</button>
+                <PasswordInputField
+                    name="profile_current_password"
+                    id="profile_current_password"
+                    value={this.state.currentPassword}
+                    onChange={this.handleCurrentPasswordChange}
+                     placeholder="Current Password" />
+                <PasswordInputField
+                    name="profile_password" id="profile_password"
+                    value={ this.state.password }
+                    onChange={ this.handlePasswordChange }
+                    placeholder="New Password" />
+                <PasswordInputField
+                    name="profile_confirm_password"
+                    id="profile_confirm_password"
+                    value={ this.state.confirmPassword }
+                    onChange={ this.handleConfirmPasswordChange }
+                    placeholder="Confirm New Password" />
+                    <SendButton buttonName="Change!" onSubmit={ this.handlePasswordSubmit } toastMessage="Password changed successfully" />
                 </form>
+                <h3>Wanna Leave Us? Ah, We Will Miss You!</h3>
+                        <form method="post" action="#">
+                            <PasswordInputField
+                                name="profile_delete_password"
+                                id="profile_delete_password"
+                                value={ this.state.deletePassword }
+                                onChange={ this.handleDeletePasswordChange }
+                                placeholder="Password" />
+                        <br />
+                            <SendButton id="DeleteProfileButton" buttonName="Delete" onSubmit={ this.handleDeleteProfile } />
+                        </form>
             </div>
             </div>
         )

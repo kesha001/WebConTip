@@ -1,26 +1,19 @@
 import React, { Component } from "react";
+import Header from "./Header";
 import WatchedMoviesBody from "./WatchedMoviesBody";
 import Footer from "./Footer";
-import Header from './Header';
-import PropTypes from "prop-types";
 
 
-class WatchedMoviesPage extends Component{
-    static get propTypes() {
-    return {
-        history: PropTypes.any,
-    };
-}
+class WatchedMoviesPage extends Component {
     render() {
         return (
-            <div>
-                <Header/>
-                <WatchedMoviesBody history={this.props.history}/>
-                <Footer/>
+            <div id="wrapper">
+                <Header />
+                <WatchedMoviesBody history={this.props.history} />
+                <Footer />
             </div>
-        )
+        );
     }
 }
-
 
 export default WatchedMoviesPage;

@@ -8,6 +8,7 @@ import ProfilePage from "./components/ProfilePage";
 import SearchPage from "./components/SearchPage";
 import WatchedMoviesPage from "./components/WatchedMoviesPage";
 import history from './components/history';
+import FilmPage from "./components/FilmPage";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/profile/" component={ProfilePage} />
           <Route path="/search/" component={SearchPage} />
           <Route path="/watched_movies" component={WatchedMoviesPage} />
+          <Route path="/film/:id" component={FilmPage} />
         </Router>
   );
 }

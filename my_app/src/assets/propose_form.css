@@ -2,7 +2,8 @@
   font-family: "Open Sans", Arial, sans-serif;
   background-color: #ffe6cc;
   text-align: left;
-  padding: 5%; }
+  padding: 5%;
+  margin-top: 10%; }
   .propose_form input[type=link] {
     width: 40%;
     height: 100px;

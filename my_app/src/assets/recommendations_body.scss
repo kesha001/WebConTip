@@ -18,19 +18,22 @@
 }
 
 article{
+    margin: 5px;
     display: block;
-      width: 100%;
+      width: 30%;
 }
 
 .image {
   opacity: 1;
-  display: block;
   width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  margin-top: 0%;
   border-radius: 8px;
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
 }
 
 .film_inside_name{
@@ -65,10 +68,6 @@ article{
 }
 
 
-
-
-
-
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 50%;
@@ -82,21 +81,21 @@ article{
   }
 }
 
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  justify-content: space-around;
-  .tiles {
-      margin: 5%;
-
-  }
+.tiles {
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: space-around;
 }
+
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
+    article{
+        width: 90%;
+    }
   .column {
     flex: 50%;
     max-width: 50%;
@@ -112,6 +111,9 @@ article{
   }
 }
 @media screen and (max-width: 700px) {
+    article{
+        width: 95%;
+    }
   .column {
     flex: 100%;
     max-width: 100%;
@@ -153,8 +155,12 @@ article{
   .image {
     width: 100%;
   }
+
   .container {
     font-size: 30px;
+  }
+  article{
+        width: 50%;
   }
   .container {
     width: 40%;

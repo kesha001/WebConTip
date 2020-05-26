@@ -13,9 +13,9 @@ class RecommendationsPage extends Component{
 }
     render() {
         return (
-            <div>
+            <div className="main">
                 <Header/>
-                <div className="main">
+                <div >
                 <div className="main_title"><h1>Your recommendations for today</h1></div>
                     <MovieList history={this.props.history}/>
                 </div>
