@@ -14,7 +14,7 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-describe('HeaderComponent', () => {
+describe('InfoTextComponent', () => {
     
     const props = {
         data: [],

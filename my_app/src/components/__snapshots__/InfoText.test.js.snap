@@ -1,3 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Component renders properly 1`] = `ShallowWrapper {}`;
+
 exports[`HeaderComponent renders properly 1`] = `ShallowWrapper {}`;
+
+exports[`InfoTextComponent renders properly 1`] = `ShallowWrapper {}`;
