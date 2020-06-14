@@ -43,8 +43,8 @@ class InfoText extends Component {
 	render() {
 		return (
 			<div className="profile_info">
-				<p>Username: {this.state.data.username} </p>
-				<p>Email: {this.state.data.email} </p>
+				<p id="username_prof">Username: {this.state.data.username} </p>
+				<p id="email_prof">Email: {this.state.data.email} </p>
 			</div>
 		);
 	}

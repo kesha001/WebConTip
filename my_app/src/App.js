@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import RecommendationsPage from "./components/RecommendationsPage";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 import "./assets/CAC.css";
 import LoginPage from "./components/LoginPage";
 import ProfilePage from "./components/ProfilePage";

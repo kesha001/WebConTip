@@ -62,12 +62,12 @@ class LoginForm extends Component{
             <div>
             <div className="login_container">
                 <div className="main_title"><h1>Log in</h1></div>
-                    <form method="post" onSubmit={this.handleSubmit}>
+                    <form id="input-auth-form" method="post" onSubmit={this.handleSubmit}>
                       <label htmlFor="username" >Login</label>
-                      <input type="login"  value={this.state.username} onChange={this.handleUsernameChange} placeholder="Enter Login" name="username"/>
+                      <input id="input-auth-username" type="login"  value={this.state.username} onChange={this.handleUsernameChange} placeholder="Enter Login" name="username"/>
                       <label htmlFor="password">Password</label>
-                      <input type="password" name="password" className="password_form" value={this.state.password} onChange={this.handlePasswordChange} placeholder="Enter Password.."/>
-                      <button type="submit">Submit</button>
+                      <input id="input-auth-password" type="password" name="password" className="password_form" value={this.state.password} onChange={this.handlePasswordChange} placeholder="Enter Password.."/>
+                      <button id="input-auth-button" type="submit">Submit</button>
                     </form>
                 </div>
             </div>

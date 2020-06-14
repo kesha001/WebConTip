@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Checkbox from './Checkbox';
 
-test('renders without crashing', () => {
+it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  ReactDOM.render(<Checkbox />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
