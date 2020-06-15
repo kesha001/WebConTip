@@ -17,28 +17,9 @@ it('renders without crashing', () => {
 
 describe('Login Component', () => {
   window.alert = jest.fn();
-  let wrapper;
   const mockedEvent = { target: {}, preventDefault: () => {} };
-  const handleSubmit = jest.fn(() => { 
-    let options = {
-      method: "POST",
-      body: JSON.stringify(wrapper.state()),
-      headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-      }
-    }
-    fetch('http://localhost:8000/api/v1/auth/login/', options)
-    .then(res => {
-      if (res.status != 200){
-        alert("Wrong credentials!");
-        return false;
-      }
-      alert("Success! Logged in!");
-      return res.json();
-    })
-  });
 
+  let wrapper;
   beforeEach(() => {
     wrapper = shallow(<LoginForm history={history} />);
   });
